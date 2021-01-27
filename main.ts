@@ -1,5 +1,6 @@
 while (true) {
-    if (input.rotation(Rotation.Pitch)) {
+    console.log(input.rotation(Rotation.Pitch))
+    if (input.rotation(Rotation.Pitch) > 9 || input.rotation(Rotation.Pitch) < -9) {
         light.showAnimation(light.rainbowAnimation, 100)
     }
     
